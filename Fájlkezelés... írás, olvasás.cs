@@ -114,6 +114,44 @@ namespace _2022.12.06. - Fájlkezelés(StreamReader, StreamWriter)
         } while (futhat);
 
         sr5.Close();
+        
+        
+        /* EGYSZERŰBB VERZIÓ 
+        
+         static void Main(string[] args)
+        {
+           
+            StreamWriter sr = new StreamWriter("futok.csv");
+           
+            do
+            {
+                Console.Write("Kérem a futó nevét: ");
+                string futo = Console.ReadLine();
+
+                if (futo == "")
+                {
+                    break;
+                }
+                else 
+                {
+                    Console.Write("Adja meg a magasságát(cm): ");
+                    futo += "; " + Console.ReadLine();                               
+                    sr.WriteLine(futo);
+                    Console.WriteLine(futo);                     
+                } 
+                
+            } while (true);
+           
+        }   */
+        
+        
+        
+        
+        
+        
     }
+        
+        
+        
 }
 }
